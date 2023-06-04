@@ -23,7 +23,7 @@ Building and runnig the test container
 --------------------------------------
 
 ```sh
-$ docker build -t django-fastapi-perf . && \
+$ docker build --rm -t django-fastapi-perf . && \
   docker run -it --rm -p 8001:8001 -p 8002:8002 django-fastapi-perf
 ```
 
