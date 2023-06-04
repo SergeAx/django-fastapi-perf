@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "django-fastapi-perf"
+version = "0.1.0"
+description = "Compare performance of Django and FastAPI frameworks"
+authors = ["Your Name <you@example.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^4.2.1"
+fastapi = {extras = ["all"], version = "^0.95.2"}
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+gunicorn = "^20.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+locust = "^2.15.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
